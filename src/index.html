@@ -6,32 +6,24 @@
         <title>Document</title>
         <link rel="stylesheet" href="styles/index.css" />
     </head>
-    <body class="flex flex-col justify-center items-center h-full min-h-screen">
-        <h1 class="text-5xl text-purple-500 text-center font-bold">
-            Hello from tailwind
-        </h1>
-        <div class="mt-16 text-gray-800">
-            Built with
-            <a
-                target="_blank"
-                class="font-semibold underline"
-                href="https://tailwindcss.com"
-                >tailwindcss</a
-            >,
-            <a
-                target="_blank"
-                class="font-semibold underline"
-                href="https://parceljs.org/"
-                >parcel</a
-            >
-            and
-            <a
-                target="_blank"
-                class="font-semibold underline"
-                href="https://www.typescriptlang.org/"
-                >typescript</a
-            >.
-        </div>
-        <script src="app/index.ts"></script>
+    <body class="p-16 bg-gray-100">
+      
+        <script src="js/index.ts"></script>
+        <script type="text/html" id="todoItemTemplate">
+            <label class="w-4/5 inline-block">
+            <input {{#completed}}checked{{/completed}} type="checkbox" id="toggle"></input>
+            {{title}}
+            </label>
+        <svg class="w-5 block cursor-pointer text-red-600 stroke-current" id="delete" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+        </svg>
+        </script>
+
+        <script type="text/html" id="todoItemsTemplate">
+            <header id="addNewTodoItem" class="mb-2">
+                <input class="form-input w-full p-2 " type="text" autofocus id="newTodoItem" placeholder="What's the next task?"></input>
+            </header>
+            <ul class="border-t border-l border-gray-400" id="todoItems"></ul>
+        </script>
     </body>
 </html>

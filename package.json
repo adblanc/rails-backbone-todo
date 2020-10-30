@@ -11,9 +11,18 @@
         "clean": "rimraf ./dist ./.cache"
     },
     "dependencies": {
-        "tailwindcss": "^1.9.6"
+        "@tailwindcss/custom-forms": "^0.2.1",
+        "backbone": "^1.4.0",
+        "jquery": "^3.5.1",
+        "mustache": "^4.0.1",
+        "tailwindcss": "^1.9.6",
+        "underscore": "^1.11.0"
     },
     "devDependencies": {
+        "@types/backbone": "^1.4.5",
+        "@types/jquery": "^3.5.4",
+        "@types/mustache": "^4.0.1",
+        "@types/underscore": "^1.10.24",
         "@typescript-eslint/eslint-plugin": "^4.6.0",
         "@typescript-eslint/parser": "^4.6.0",
         "autoprefixer": "^10.0.1",
