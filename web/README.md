@@ -1,5 +1,3 @@
-# README
-
 I followed [this tutorial](https://www.udemy.com/course/backbonejs-tutorial/) and coded along on the last project of the course which is a todo list app.
 However, I used Typescript as I love it and therefore started with my [Parcel typescript template](https://github.com/adblanc/parcel-typescript-tailwindcss) in order to code a vanilla typescript web app.
 
