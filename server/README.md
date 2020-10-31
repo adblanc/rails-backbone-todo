@@ -1,5 +1,3 @@
-# README
-
 This is a **beginner** rails project, I first followed [this tutorial](https://www.youtube.com/watch?v=QojnRc7SS9o) and modified things to adapt it to the frontend part.
 
 # Getting started
@@ -15,7 +13,7 @@ I already had postgresql (10.14) installed.
 
 Then I used `rails new directory_name --api --database=postgresql` to bootstrap this directory with everything I needed to make a rails API app connected to a PostgreSQL db.
 
-Make sure to `sh bundle install` in the directory everytime you add or remove gems to your Gemfile.
+Make sure to `bundle install` in the directory everytime you add or remove gems to your Gemfile.
 
 We can already launch our development server using `rails s` and check that it's working at `localhost:3000`.
 
