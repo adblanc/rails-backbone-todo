@@ -4,7 +4,7 @@ This is a **beginner** rails project, I first followed [this tutorial](https://w
 
 # Getting started
 
-I guess you need to `bundle install` inside the directory and then run the server using `sh rails s`.
+I guess you need to `bundle install` inside the directory and then run the server using `rails s`.
 
 
 
